@@ -1,33 +1,23 @@
-1. "discord" - The discord library will be used across multiple files for bot creation, sending messages, and handling commands.
+1. "discord" - The discord library will be used in main.py for creating the bot and in stock_info.py and stock_recommendation.py for sending messages to the user.
 
-2. "config" - The configuration file will be imported in multiple files to access bot token, stock API keys, and other configuration details.
+2. "dotenv" - This library will be used in main.py and config.py for loading environment variables.
 
-3. "stock_api" - This module will be used in "fetch_stock.py" and "recommend_stock.py" to fetch and analyze stock data.
+3. "requests" - This library will be used in stock_info.py and stock_recommendation.py for making HTTP requests to the stock API.
 
-4. "ai_model" - The AI model will be used in "recommend_stock.py" to analyze stock data and make recommendations.
+4. "tensorflow" or "pytorch" - These libraries will be used in stock_recommendation.py for creating the AI model that recommends stocks.
 
-5. "fetch_stock" and "recommend_stock" - These command functions will be used in "main.py" to handle user commands.
+5. "pandas" - This library will be used in stock_info.py and stock_recommendation.py for data manipulation.
 
-6. "data_processing" - This utility will be used in "stock_api.py" and "ai_model.py" for processing raw data.
+6. "numpy" - This library will be used in stock_recommendation.py for numerical computations.
 
-7. "error_handling" - This utility will be used across multiple files to handle and log errors.
+7. "TOKEN" - This environment variable will be loaded in main.py and used for authenticating the bot with Discord.
 
-8. "message_processing" - This utility will be used in "main.py" and command files to process user messages.
+8. "STOCK_API_KEY" - This environment variable will be loaded in stock_info.py and stock_recommendation.py and used for authenticating with the stock API.
 
-9. "stock_data_model" - This data schema will be used in "stock_api.py", "ai_model.py", and command files to structure the stock data.
+9. "get_stock_info" - This function will be defined in stock_info.py and used in main.py for getting information about a specific stock.
 
-10. "user_model" - This data schema will be used in "main.py" and command files to structure user data.
+10. "recommend_stocks" - This function will be defined in stock_recommendation.py and used in main.py for recommending stocks to the user.
 
-11. "requests" - This library will be used in "stock_api.py" to make HTTP requests to the stock API.
+11. "process_message" - This function will be defined in utils.py and used in main.py for processing user messages.
 
-12. "tensorflow" or "pytorch" - These libraries will be used in "ai_model.py" to build and train the AI model.
-
-13. "pandas" - This library will be used in "data_processing.py", "stock_api.py", and "ai_model.py" for data manipulation.
-
-14. "numpy" - This library will be used in "data_processing.py" and "ai_model.py" for numerical computations.
-
-15. "logging" - This library will be used in "error_handling.py" to log errors.
-
-16. "asyncio" - This library will be used in "main.py" and command files for asynchronous programming.
-
-17. "os" - This library will be used in "config.py" to access environment variables.
+12. "requirements.txt" - This file will list all the shared dependencies that need to be installed for the bot to work.
